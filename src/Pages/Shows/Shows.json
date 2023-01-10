@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Prison Break",
+        "description": "Michael is too smart",
+        "src": "https://images6.alphacoders.com/469/thumb-1920-469280.jpg",
+        "year": "2008",
+        "amountSeasons": 5,
+        "status": true,
+        "genre": [
+            {
+                "data": "Crime"
+            },
+            {
+                "data": "Mindness"
+            }
+        ]
+    },
+    {
+        "title": "The 100",
+        "description": "A nuclear conflict has decimated civilisation. A century later, a spaceship accommodating humanity's lone survivors dispatch 100 juvenile delinquents back to the Earth to determine its habitability.",
+        "src": "https://images5.alphacoders.com/675/thumb-1920-675868.jpg",
+        "year": "2014",
+        "amountSeasons": 7,
+        "status": true,
+        "genre": [
+            {
+                "data": "Crime"
+            },
+            {
+                "data": "Si-fi"
+            }
+        ]
+    },
+    {
+        "title": "Breaking Bad",
+        "description": "Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. His priorities begin to change when he partners with Jesse.",
+        "src": "https://wallpaperaccess.com/full/781822.jpg",
+        "year": "2008",
+        "amountSeasons": 5,
+        "status": true,
+        "genre": [
+            {
+                "data": "Crime"
+            },
+            {
+                "data": "Drama"
+            }
+        ]
+    }
+]

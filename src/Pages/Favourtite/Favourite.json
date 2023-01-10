@@ -1,0 +1,99 @@
+[
+    {
+        "title": "Batman Dark Knight",
+        "description": "Batman wins the fight",
+        "src": "https://wallpaper.dog/large/16993942.jpg",
+        "length": 120,
+        "year": "2013",
+        "status": true,
+        "genre": [
+            {
+                "0": "Crime",
+                "1": "Action"
+            }
+        ]
+    },
+    {
+        "title": "The Joker",
+        "description": "The joker is a crazy mane",
+        "src": "https://uhdwallpapers.org/uploads/converted/19/09/21/joker-4k-poster-1920x1080_666674-mm-90.jpg",
+        "length": 123,
+        "year": "2020",
+        "status": true,
+        "genre": [
+            {
+                "0": "Crime",
+                "1": "Mindness"
+            }
+        ]
+    },
+    {
+        "title": "Batman vs Superman",
+        "description": "Superman is trong, but will he win?",
+        "src": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dddb8beb-7509-4c66-bc59-5e64fc25d614/d9rc6n5-361b4873-6354-4561-9002-f747d164e16c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RkZGI4YmViLTc1MDktNGM2Ni1iYzU5LTVlNjRmYzI1ZDYxNFwvZDlyYzZuNS0zNjFiNDg3My02MzU0LTQ1NjEtOTAwMi1mNzQ3ZDE2NGUxNmMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.qIPvnoaNif0K5lxZYcuabm2ZlI65jbqkRBxtvuEjmlk",
+        "length": 119,
+        "year": "2016",
+        "status": false,
+        "genre": [
+            {
+                "0": "Drama",
+                "1": "Action"
+            }
+        ]
+    },
+    {
+        "title": "Batman Dark Knight",
+        "description": "Batman wins the fight",
+        "src": "https://wallpaper.dog/large/16993942.jpg",
+        "length": 120,
+        "year": "2013",
+        "status": true,
+        "genre": [
+            {
+                "0": "Crime",
+                "1": "Action"
+            }
+        ]
+    },
+    {
+        "title": "The Joker",
+        "description": "The joker is a crazy mane",
+        "src": "https://uhdwallpapers.org/uploads/converted/19/09/21/joker-4k-poster-1920x1080_666674-mm-90.jpg",
+        "length": 123,
+        "year": "2020",
+        "status": true,
+        "genre": [
+            {
+                "0": "Crime",
+                "1": "Mindness"
+            }
+        ]
+    },
+    {
+        "title": "Batman vs Superman",
+        "description": "Superman is trong, but will he win?",
+        "src": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dddb8beb-7509-4c66-bc59-5e64fc25d614/d9rc6n5-361b4873-6354-4561-9002-f747d164e16c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RkZGI4YmViLTc1MDktNGM2Ni1iYzU5LTVlNjRmYzI1ZDYxNFwvZDlyYzZuNS0zNjFiNDg3My02MzU0LTQ1NjEtOTAwMi1mNzQ3ZDE2NGUxNmMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.qIPvnoaNif0K5lxZYcuabm2ZlI65jbqkRBxtvuEjmlk",
+        "length": 119,
+        "year": "2016",
+        "status": true,
+        "genre": [
+            {
+                "0": "Drama",
+                "1": "Action"
+            }
+        ]
+    }, {
+        "title": "The Joker",
+        "description": "The joker is a crazy mane",
+        "src": "https://uhdwallpapers.org/uploads/converted/19/09/21/joker-4k-poster-1920x1080_666674-mm-90.jpg",
+        "length": 123,
+        "year": "2020",
+        "status": false,
+        "genre": [
+            {
+                "0": "Crime",
+                "1": "Mindness"
+            }
+        ]
+    }
+]
