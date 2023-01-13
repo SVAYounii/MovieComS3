@@ -13,6 +13,7 @@ function NavScrollExample() {
   }
 
   return (
+    <div  data-testid="navbar-1">
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container fluid>
         <Navbar.Brand href="/" className='ms-5'>MovieCom</Navbar.Brand>
@@ -47,6 +48,7 @@ function NavScrollExample() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
   );
 }
 

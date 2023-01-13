@@ -83,7 +83,7 @@ export function GetAllUsers() {
 
   axios(config)
     .then(function (response) {
-      console.log("Succes", response.data.accessToken);
+      console.log("Succes your token is", response.data.accessToken);
       localStorage.setItem("accessToken", JSON.stringify(response.data));
       console.log("Logged in Redirect")
       window.location.replace("http://localhost:3006/")

@@ -11,7 +11,6 @@ import { Profile } from './Pages/Profile/Profile'
 import { LoginTest } from './Pages/LoginTest'
 import { RegisterTest } from './Pages/RegisterTest'
 import {
-  BrowserRouter as Router,
   Route,
   Routes,
   Navigate,

@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 import SmallCarousel from '../../Components/SmallCarousel';
 import { useEffect, useState } from "react";
 import axios from 'axios';
-import { HomeBottomInner } from './HomeBottomInner';
+import ContentItem from '../../Components/ContentItem';
 
-export function HomeBottom() {
-
-    const [data, setData] = useState(0);
+export function HomeBottomInner(Genre) {
+    const [finaldata, setData] = useState(0);
 
     useEffect(() => {
         const getData = async () => {
 
             let config = {
                 method: 'get',
-                url: 'https://localhost:7094/api/Genres',
+                url: 'https://localhost:7094/api/Contents/GetContentbyGenre?genreId=' + Genre.Genre.id,
                 headers: {
                     'Authorization': 'Bearer ' + JSON.parse(localStorage.getItem("accessToken")).accessToken
                 }
@@ -30,22 +29,13 @@ export function HomeBottom() {
         getData();
     }, []);
 
-    
-
     return (
         <div>
-            {data !== 0 &&
+            {finaldata !== 0 &&
 
-                data.map((childs, index) => {
-                    return (
-                        <HomeBottomInner Genre={childs}></HomeBottomInner>
-                    )
-                })
+                <SmallCarousel Data={finaldata} Genre={Genre.Genre.name}></SmallCarousel>
             }
         </div>
     );
 
 }
-
-
-export default HomeBottom

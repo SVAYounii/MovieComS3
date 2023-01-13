@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import { Col } from 'react-bootstrap';
 import CustomModal from './CustomModal'
 
@@ -6,7 +6,7 @@ const ContentItem = ({ Contents }) => {
     const [modalShow, setModalShow] = React.useState(false);
     return (
         <Col sm={3} >
-            <div class="pad15 my-3" data-testid="small-carousel-1">
+            <div class="pad15 my-3" data-testid="content-item-1">
                 <img class="bd-placeholder-img card-img-top" width="100%" height="100%" src={Contents.imgUrl} role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" />
                 <div class="card-body">
                     <p class="h5 card-title text-light mt-3">{Contents.title}</p>
