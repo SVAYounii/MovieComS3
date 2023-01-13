@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SmallCarousel from '../../Components/SmallCarousel';
 import { useEffect, useState } from "react";
 import axios from 'axios';
-import ContentItem from '../../Components/ContentItem';
 
 export function HomeBottomInner(Genre) {
     const [finaldata, setData] = useState(0);

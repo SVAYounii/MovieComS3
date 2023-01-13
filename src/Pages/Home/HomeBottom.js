@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import SmallCarousel from '../../Components/SmallCarousel';
+import React from 'react';
 import { useEffect, useState } from "react";
 import axios from 'axios';
 import { HomeBottomInner } from './HomeBottomInner';
