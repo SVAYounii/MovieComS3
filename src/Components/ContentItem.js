@@ -7,7 +7,7 @@ const ContentItem = ({ Contents }) => {
     return (
         <Col sm={3} >
             <div class="pad15 my-3" data-testid="content-item-1">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="100%" src={Contents.imgUrl} role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" />
+                <img class="bd-placeholder-img card-img-top" width="100%" height="100%" src={Contents.imgUrl} aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" />
                 <div class="card-body">
                     <p class="h5 card-title text-light mt-3">{Contents.title}</p>
                     <p class="card-title text-muted">{Contents.movie === 0 ? 'Seasons: ' + Contents.seasons.length : Contents.length + ' min'}</p>
