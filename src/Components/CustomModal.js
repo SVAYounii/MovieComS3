@@ -34,8 +34,8 @@ const CustomModal = (props) => {
 
             >
                 <Modal.Body>
-                    <iframe id='iframePlayer' src={props.data.filePath} width={'100%'} height={'430.875'} frameborder="0" allowfullscreen className={'rounded'} style={{ display: 'none' }} />
-                    <img id='thumbnailContent' className='rounded' src={props.data.imgUrl} width={'100%'} height={'100%'} style={{ display: 'inline' }}></img>
+                    <iframe title="Content" id='iframePlayer' src={props.data.filePath} width={'100%'} height={'430.875'} frameborder="0" allowfullscreen className={'rounded'} style={{ display: 'none' }} />
+                    <img alt='some' id='thumbnailContent' className='rounded' src={props.data.imgUrl} width={'100%'} height={'100%'} style={{ display: 'inline' }}></img>
 
                     <p className='h3 mt-1'>{props.data.title}</p>
                     <p className=''>{new Date(props.data.date).getFullYear()} : {props.data.movie === 0 ? props.data.seasons.length + ' Seasons' : props.data.length + ' min'} </p>

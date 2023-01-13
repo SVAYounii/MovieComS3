@@ -8,7 +8,7 @@ export function Profile() {
       <div class="py-5 bg-secondary">
         <div class="">
           <div class="w-50 mx-auto d-block">
-            <img src="https://www.medianic.co.uk/wp-content/uploads/2019/01/testimonial-profile-200x200.png" class="mx-auto d-block rounded-circle" />
+            <img alt='img' src="https://www.medianic.co.uk/wp-content/uploads/2019/01/testimonial-profile-200x200.png" class="mx-auto d-block rounded-circle" />
           </div>
         </div>
       </div>
