@@ -8,8 +8,6 @@ import { ShowInfo } from './Pages/Shows/ShowInfo.js'
 import { MovieInfo } from './Pages/Movies/MovieInfo'
 import { Favourite } from './Pages/Favourtite/Favourtite'
 import { Profile } from './Pages/Profile/Profile'
-import { LoginTest } from './Pages/LoginTest'
-import { RegisterTest } from './Pages/RegisterTest'
 import {
   Route,
   Routes,
@@ -31,8 +29,6 @@ console.log(userData)
       <Route path="/Shows" element={loggedInUser ? (<Shows />) : (<Navigate replace to={"/Login"} />)} />
       <Route path="/Favourite" element={loggedInUser ? (<Favourite />) : (<Navigate replace to={"/Login"} />)} />
       <Route path="/Profile" element={loggedInUser ? (<Profile />) : (<Navigate replace to={"/Login"} />)} />
-      <Route path="/LoginTest" element={loggedInUser ? (<LoginTest />) : (<Navigate replace to={"/Login"} />)} />
-      <Route path="/RegisterTest" element={loggedInUser ? (<RegisterTest />) : (<Navigate replace to={"/Login"} />)} />
       <Route path="/Shows/:ShowId" element={loggedInUser ? (<ShowInfo />) : (<Navigate replace to={"/Login"} />)} />
     </Routes>
   );
