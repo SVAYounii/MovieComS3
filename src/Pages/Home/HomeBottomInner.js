@@ -8,10 +8,10 @@ export function HomeBottomInner(Genre) {
 
     useEffect(() => {
         const getData = async () => {
-
+            const id = Genre.Genre.id
             let config = {
                 method: 'get',
-                url: 'https://localhost:7094/api/Contents/GetContentbyGenre?genreId=' + Genre.Genre.id,
+                url: 'https://localhost:7094/api/Contents/GetContentbyGenre?genreId=' + id,
                 headers: {
                     'Authorization': 'Bearer ' + JSON.parse(localStorage.getItem("accessToken")).accessToken
                 }

@@ -1,5 +1,5 @@
 import React  from 'react';
-import { Col } from 'react-bootstrap';
+import { Button, Col } from 'react-bootstrap';
 import CustomModal from './CustomModal'
 
 const ContentItem = ({ Contents }) => {
@@ -13,7 +13,7 @@ const ContentItem = ({ Contents }) => {
                     <p class="card-title text-muted">{Contents.movie === 0 ? 'Seasons: ' + Contents.seasons.length : Contents.length + ' min'}</p>
                     <div class="d-flex justify-content-between align-items-center mt-3">
                         <p class="card-text">
-                            <a class="btn btn-danger" name="id" onClick={() => setModalShow(true)}>Learn More</a>
+                            <Button variant='danger' name="id" onClick={() => setModalShow(true)}>Learn More</Button>
                         </p>
                         <small class="text-muted">{Contents.Date}</small>
                     </div>

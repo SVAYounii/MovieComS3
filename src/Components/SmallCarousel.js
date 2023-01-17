@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import ContentItem from './ContentItem';
 
 
-export function SmallCarousel({Data, Genre}) {
+export function SmallCarousel({ Data, Genre }) {
     const tt = JSON.stringify(Data)
     console.log("dd:" + tt)
     return (
@@ -14,12 +14,11 @@ export function SmallCarousel({Data, Genre}) {
                     <div class="MultiCarousel-inner">
                         <Row>
                             {Data.map((data, index) => {
-                                if (index >= 12) {
-                                    return;
+                                if (index < 12) {
+                                    return (data.status &&
+                                        <ContentItem Contents={data}></ContentItem>
+                                    )
                                 }
-                                return (data.status &&
-                                    <ContentItem Contents={data}></ContentItem>
-                                )
                             })}
                         </Row>
                     </div>
