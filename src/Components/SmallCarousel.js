@@ -17,8 +17,9 @@ export function SmallCarousel({ Data, Genre }) {
                                 if (index < 12) {
                                     return (data.status &&
                                         <ContentItem Contents={data}></ContentItem>
-                                    )
+                                    );
                                 }
+                                return null;
                             })}
                         </Row>
                     </div>

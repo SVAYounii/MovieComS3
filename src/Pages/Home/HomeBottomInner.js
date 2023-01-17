@@ -26,7 +26,7 @@ export function HomeBottomInner(Genre) {
                 });
         };
         getData();
-    }, []);
+    }, [Genre.Genre.id]);
 
     return (
         <div>
