@@ -74,7 +74,9 @@ export function GetAllUsers() {
     method: 'post',
     url: ConnectionString() +'/api/Users/Login',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Credentials':true
     },
     data: data
   };
