@@ -72,7 +72,7 @@ export function GetAllUsers() {
   console.log(data);
   var config = {
     method: 'post',
-    url: ConnectionString() +'api/Users/Login',
+    url: ConnectionString() +'/api/Users/Login',
     headers: {
       'Content-Type': 'application/json'
     },
@@ -85,7 +85,7 @@ export function GetAllUsers() {
       console.log("Succes your token is", response.data.accessToken);
       localStorage.setItem("accessToken", JSON.stringify(response.data));
       console.log("Logged in Redirect")
-      window.location.replace("http://localhost:3006/")
+      window.location.replace("/")
     })
     .catch(function (error) {
       console.log("error", error);
