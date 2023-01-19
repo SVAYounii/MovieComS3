@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import background from '../../Images/M.png'
 import axios from 'axios';
+import { ConnectionString } from '../../Components/ConnectionString';
 
 
 export function Login() {
@@ -71,7 +72,7 @@ export function GetAllUsers() {
   console.log(data);
   var config = {
     method: 'post',
-    url: 'https://localhost:7094/api/Users/Login',
+    url: ConnectionString() +'api/Users/Login',
     headers: {
       'Content-Type': 'application/json'
     },
