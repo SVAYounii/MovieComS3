@@ -1,6 +1,7 @@
 import BigCarousel from '../../Components/BigCarousel';
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import { ConnectionString } from '../../Components/ConnectionString';
 
 export function HomeTop() {
   const [data, setData] = useState(0);
@@ -10,7 +11,7 @@ export function HomeTop() {
 
       let config = {
         method: 'get',
-        url: 'https://localhost:7094/api/Contents/10',
+        url: ConnectionString() +'/api/Contents/10',
         headers: {
           'Authorization': 'Bearer ' + JSON.parse(localStorage.getItem("accessToken")).accessToken
         }

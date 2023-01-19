@@ -15,44 +15,38 @@ export function Login() {
     await GetAllUsers()
   };
 
-  const loggedInUser = new Date(localStorage.getItem("UserLogg").split('/')[1]).getTime() > new Date(Date.now()).getTime();
+  return (
+    <Container fluid style={{ backgroundImage: `url(${background})` }}>
+      <Row >
+        <Col>
+        </Col>
+        <Col xs lg="5">
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }} >
+            <Form className='w-100 mx-5'>
+              <h1 style={{ textAlign: 'center' }} className="font-weight-bold mb-5"> Login </h1>
+              <Form.Group className="mb-3 mx-5" controlId="formBasicEmail">
+                <Form.Label className='mb-0'>Usernmae</Form.Label>
+                <Form.Control id="usernameValue" type="username" placeholder="Enter username" />
+              </Form.Group>
 
-  if (loggedInUser) {
-    window.location.replace("http://localhost:3006/");
-  } else {
-    return (
-      <Container fluid style={{ backgroundImage: `url(${background})` }}>
-        <Row >
-          <Col>
-          </Col>
-          <Col xs lg="5">
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }} >
-              <Form className='w-100 mx-5'>
-                <h1 style={{ textAlign: 'center' }} className="font-weight-bold mb-5"> Login </h1>
-                <Form.Group className="mb-3 mx-5" controlId="formBasicEmail">
-                  <Form.Label className='mb-0'>Usernmae</Form.Label>
-                  <Form.Control id="usernameValue" type="username" placeholder="Enter username" />
-                </Form.Group>
+              <Form.Group className="mb-3 mx-5" controlId="formBasicPassword">
+                <Form.Label className='mb-0'>Password</Form.Label>
+                <Form.Control id="passwordValue" type="password" placeholder="Password" />
+              </Form.Group>
+              <div className="d-grid gap-2">
+                <Button onClick={handleSubmit} variant="primary" className='mx-5'>
+                  Login
+                </Button>
+                <p className='mx-5 text-center text-danger d-none' id="notFound" style={{ color: "grey" }}>Account not found!</p>
+                <a href='/Register' className='mx-5 text-center mt-4 link-secondary' style={{ color: "grey" }}>Create Your Account </a>
+              </div>
 
-                <Form.Group className="mb-3 mx-5" controlId="formBasicPassword">
-                  <Form.Label className='mb-0'>Password</Form.Label>
-                  <Form.Control id="passwordValue" type="password" placeholder="Password" />
-                </Form.Group>
-                <div className="d-grid gap-2">
-                  <Button onClick={handleSubmit} variant="primary" className='mx-5'>
-                    Login
-                  </Button>
-                  <p className='mx-5 text-center text-danger d-none' id="notFound" style={{ color: "grey" }}>Account not found!</p>
-                  <a href='/Register' className='mx-5 text-center mt-4 link-secondary' style={{ color: "grey" }}>Create Your Account </a>
-                </div>
-
-              </Form>
-            </div>
-          </Col>
-        </Row>
-      </Container >
-    );
-  }
+            </Form>
+          </div>
+        </Col>
+      </Row>
+    </Container >
+  );
 }
 
 export function GetAllUsers() {
@@ -72,7 +66,7 @@ export function GetAllUsers() {
   console.log(data);
   var config = {
     method: 'post',
-    url: ConnectionString() +'/api/Users/Login',
+    url: ConnectionString() + '/api/Users/Login',
     headers: {
       'Content-Type': 'application/json'
     },

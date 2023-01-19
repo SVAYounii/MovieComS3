@@ -2,6 +2,7 @@ import React from 'react';
 import SmallCarousel from '../../Components/SmallCarousel';
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import { ConnectionString } from '../../Components/ConnectionString';
 
 export function HomeBottomInner(Genre) {
     const [finaldata, setData] = useState(0);
@@ -11,7 +12,7 @@ export function HomeBottomInner(Genre) {
             const id = Genre.Genre.id
             let config = {
                 method: 'get',
-                url: 'https://localhost:7094/api/Contents/GetContentbyGenre?genreId=' + id,
+                url: ConnectionString() +'/api/Contents/GetContentbyGenre?genreId=' + id,
                 headers: {
                     'Authorization': 'Bearer ' + JSON.parse(localStorage.getItem("accessToken")).accessToken
                 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from "react";
 import axios from 'axios';
 import { HomeBottomInner } from './HomeBottomInner';
+import { ConnectionString } from '../../Components/ConnectionString';
 
 export function HomeBottom() {
 
@@ -12,7 +13,7 @@ export function HomeBottom() {
 
             let config = {
                 method: 'get',
-                url: 'https://localhost:7094/api/Genres',
+                url: ConnectionString() +'/api/Genres',
                 headers: {
                     'Authorization': 'Bearer ' + JSON.parse(localStorage.getItem("accessToken")).accessToken
                 }
