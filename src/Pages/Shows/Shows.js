@@ -4,6 +4,7 @@ import ContentItem from '../../Components/ContentItem';
 import Row from 'react-bootstrap/Row';
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import { ConnectionString } from '../../Components/ConnectionString';
 
 export function Shows() {
   const [responseData, setData] = useState(0);
@@ -13,7 +14,7 @@ export function Shows() {
 
       let config = {
         method: 'get',
-        url: 'https://localhost:7094/api/Contents/GetShows',
+        url: ConnectionString() +'/api/Contents/GetShows',
         headers: {
           'Authorization': 'Bearer ' + JSON.parse(localStorage.getItem("accessToken")).accessToken
         }

@@ -4,6 +4,7 @@ import ContentItem from '../../Components/ContentItem';
 import Row from 'react-bootstrap/Row';
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import { ConnectionString } from '../../Components/ConnectionString';
 
 export function Movies() {
 
@@ -14,7 +15,7 @@ export function Movies() {
 
       let config = {
         method: 'get',
-        url: 'https://localhost:7094/api/Contents/GetMovies',
+        url: ConnectionString() +'/api/Contents/GetMovies',
         headers: {
           'Authorization': 'Bearer ' + JSON.parse(localStorage.getItem("accessToken")).accessToken
         }

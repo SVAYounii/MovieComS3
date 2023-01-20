@@ -66,7 +66,7 @@ export function GetAllUsers() {
   console.log(data);
   var config = {
     method: 'post',
-    url: ConnectionString() + '/api/Users/LoginUser',
+    url: ConnectionString() + '/api/Users/Login',
     headers: {
       'Content-Type': 'application/json'
     },

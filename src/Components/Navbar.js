@@ -9,7 +9,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 function NavScrollExample() {
   const LogOut = () => {
     localStorage.removeItem("accessToken")
-    window.location.replace("http://localhost:3006/Login")
+    window.location.replace("/Login")
   }
 
   return (
